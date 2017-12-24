@@ -19,6 +19,14 @@ module.exports = {
 						presets:["env","react","stage-0"]
 					}
 				}
+			},
+			{
+				test:/\.css$|\.less$/,
+				use:[
+					"style-loader",
+					"css-loader",
+					"less-loader",
+				]
 			}
 		]
 	},
