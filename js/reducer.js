@@ -1,11 +1,19 @@
+import { actionTypes } from "./constants";
+
 const initialState = {
-	test: 0
+	users:[],
+	albums:[],
+	photos:[]
 }
 
 export default function reducer(state = initialState, action){
 	switch(action.type){
-		case "TEST":
-			return {...state,test:state.test + 1};
+		case actionTypes.SET_USERS:
+			return {...state,users:action.value};
+		case actionTypes.SET_ALBUMS:
+			return {...state,albums:action.value};
+			case actionTypes.SET_PHOTOS:
+			return {...state,photos:action.value};
 		default:
 			return state;
 	}

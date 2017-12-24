@@ -6,9 +6,9 @@ import reducer from "./reducer"
 import {Router,Route,IndexRoute,hashHistory} from 'react-router';
 
 import App from "./app";
-import Albums from "./albums";
-import Users from "./users";
-import Photos from "./photos";
+import Albums from "./albums/Albums";
+import Users from "./users/Users";
+import Photos from "./photos/Photos";
 
 const store = createStore(reducer);
 

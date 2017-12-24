@@ -1,4 +1,108 @@
-.test{
-	max-width:900px;
-	background-color:#ccc;
+@dark:#00796B;
+@light:#009688;
+@primary-text:#212121;
+@secondary-text:#757575;
+@primary-text2:#BDBDBD;
+
+html,body{
+	padding: 0;
+	margin: 0;
+	background-color:@primary-text2;
+	color:@primary-text;
+}
+
+.app{
+	max-width: 700px;
+	margin: 0 auto;
+	min-height: 100vh;
+	
+}
+
+.userCard{
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-bottom: 2px solid @primary-text;
+	.header{
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.contacts{
+		padding: 5px;
+		color:@secondary-text;
+		a{
+			color:@secondary-text;
+		}
+		div{
+			margin-top:5px;
+		}
+	}
+
+}
+.userCard:hover{
+	background-color: @light;
+	.contacts{
+		color:@primary-text2;
+		a{
+			color:@primary-text2;
+		}
+	}
+}
+
+.albums{
+	text-align: center;
+	background-color: #fff;
+	.album{
+		padding: 10px 0;
+		margin-bottom: 20px;
+		font-size: 24px;
+		font-weight: bold;
+		a{
+			color:@primary-text;
+		}
+		
+
+	}
+	.album:hover{
+		background-color: @light;
+	}
+}
+
+.photos{
+	background-color: #fff;
+	.container{
+		@media screen and (min-width: 300px){
+			width: 300px;
+		}
+		@media screen and (min-width: 450px){
+			width: 450px;
+		}
+		@media screen and (min-width: 600px){
+			width: 600px;
+		}
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		
+		.tumbnail{
+			display: block;
+		}
+	}
+}
+
+.title{
+	font-size: 36px;
+	font-weight: bold;
+	border-bottom: 2px solid @primary-text;
+	background-color:@dark; 
+	text-align: center;
+	padding: 20px;
+
+}
+
+.link{
+	color:@primary-text;
+	text-decoration: none;
+
 }

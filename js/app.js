@@ -4,7 +4,9 @@ import "./../css/style.less";
 class App extends React.Component {
 	
 	render(){
-		return <div className={"test"}>{this.props.children}</div>;
+		return <div className="app">
+		{this.props.children}
+		</div>;
 	}
 }
 
